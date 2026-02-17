@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMIÈRE | Natural Radiance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pearl': '#F9F6F2',
+                        'charcoal': '#1A1A1A',
+                        'gold': '#D4A373',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-pearl font-sans text-charcoal">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 px-6 py-4 flex justify-between items-center">
+        <h1 class="font-serif text-2xl tracking-widest uppercase">Lumière</h1>
+        <div class="space-x-8 hidden md:block uppercase text-xs tracking-widest">
+            <a href="#" class="hover:text-gold transition">Shop</a>
+            <a href="#" class="hover:text-gold transition">About</a>
+            <a href="#" class="hover:text-gold transition">Journal</a>
+        </div>
+        <div class="flex space-x-4">
+            <span>search</span>
+            <span>cart (0)</span>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="uppercase tracking-[0.3em] text-sm text-gold">Summer Collection 2026</span>
+                <h1 class="text-6xl md:text-8xl font-serif leading-tight">Skin that <br><span class="italic text-gold">breathes.</span></h1>
+                <p class="text-gray-500 max-w-sm leading-relaxed">High-performance botanical skincare crafted for the modern minimalist.</p>
+                <button class="bg-charcoal text-white px-10 py-4 uppercase tracking-widest hover:bg-gold transition-colors duration-300">
+                    Explore Shop
+                </button>
+            </div>
+            <div class="relative">
+                <div class="aspect-[4/5] bg-gray-200 overflow-hidden rounded-sm">
+                   <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&q=80&w=800" alt="Cosmetic Product" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="font-serif text-4xl mb-12 text-center">Curated Essentials</h2>
+            <div id="product-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
