@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMIÈRE | Sign In</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'pearl': '#F9F6F2', 'charcoal': '#1A1A1A', 'gold': '#D4A373' },
+                    fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-pearl font-sans h-screen flex items-center justify-center px-6">
+
+    <div class="w-full max-w-md bg-white p-10 shadow-sm border border-gray-100">
+        <div class="text-center mb-10">
+            <h1 class="font-serif text-3xl uppercase tracking-widest mb-2">Welcome Back</h1>
+            <p class="text-gray-400 text-sm italic">Enter your details to access your sanctuary.</p>
+        </div>
+
+        <form id="login-form" class="space-y-6">
+            <div>
+                <label class="block text-xs uppercase tracking-widest text-charcoal mb-2">Email Address</label>
+                <input type="email" id="email" required class="w-full border-b border-gray-200 py-2 focus:outline-none focus:border-gold transition-colors bg-transparent">
+            </div>
+
+            <div>
+                <label class="block text-xs uppercase tracking-widest text-charcoal mb-2">Password</label>
+                <input type="password" id="password" required class="w-full border-b border-gray-200 py-2 focus:outline-none focus:border-gold transition-colors bg-transparent">
+            </div>
+
+            <button type="submit" class="w-full bg-charcoal text-white py-4 uppercase tracking-[0.2em] text-xs hover:bg-gold transition-all duration-500 mt-4">
+                Sign In
+            </button>
+        </form>
+
+        <div class="mt-8 text-center">
+            <a href="#" class="text-xs text-gray-400 hover:text-charcoal transition uppercase tracking-widest underline decoration-gray-200 underline-offset-4">Create Account</a>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
